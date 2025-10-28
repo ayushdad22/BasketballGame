@@ -1,0 +1,10 @@
+{
+  "name": "three-bun-app",
+  "scripts": {
+    "dev": "bun run index.html",
+    "build": "echo 'No build step needed!'"
+  },
+  "dependencies": {
+    "three": "^0.172.0"
+  }
+}
