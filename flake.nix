@@ -71,7 +71,7 @@
             # Install Python packages if not already installed
             if ! python -c "import tensorflow" 2>/dev/null; then
               echo "Installing Python packages..."
-              pip install tensorflow opencv-python pandas numpy matplotlib pillow scikit-learn flask flask-cors
+              pip install tensorflow opencv-python pandas numpy matplotlib pillow scikit-learn flask flask-cors ultralytics
             fi
             
             # Install Node dependencies if package.json exists
