@@ -32,7 +32,11 @@ curl -L https://nixos.org/nix/install | sh
 ```bash
 nix --version
 ```
+### Open Nix Environment
 
+```bash
+nix develop
+```
 ## Setup
 
 ### 1. Get the Dataset
