@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Challenge</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    body { 
+      margin: 0; 
+      overflow: hidden; 
+      background: #1a1a1a;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    #ui {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+      z-index: 100;
+      background: rgba(0,0,0,0.3);
+      padding: 15px;
+      border-radius: 8px;
+      backdrop-filter: blur(10px);
+    }
+    #score {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    #shots {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    #power {
+      font-size: 18px;
+    }
+    #instructions {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.3);
+      padding: 10px;
+      backdrop-filter: blur(10px);
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div id="score">Score: 0</div>
+    <div id="shots">Shots: 0</div>
+    <div id="power">Power: 50%</div>
+  </div>
+  <div id="instructions">
+    Click and drag to aim • Release to shoot • Hold longer for more power
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
