@@ -27,3 +27,7 @@ runs/
 # Other
 .DS_Store
 *.log
+
+flake.lock
+
+package-lock.json
